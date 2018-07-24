@@ -27,13 +27,13 @@ Consider that you have already scraped data from the year 2000 to the current ro
 
 ```
 # get current Data
-PreviousCollectedData<-fread('CollectedData.csv'),data.table = F) 
+PreviousCollectedData<-fread('CollectedData.csv',data.table = F) 
   
 # Update 
 updatedData<-updateAFLData(PreviousCollectedData,yearBack = 2000)
 
 # resave
-write.csv(updatedData,file=('CollectedData.csv'))
+write.csv(updatedData,file='CollectedData.csv')
 
 ```
 
