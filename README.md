@@ -11,9 +11,9 @@ sapply(load.libraries, require, character = TRUE)
 ```
 
 ## Basic use:
-As a basic use, you can scrape all of the data from any year by specifying the `yearBack` variable. 
+As a basic use, you can scrape all of the data from any year to now by specifying the `yearBack` variable. 
 
-For example, to scrape all data form year 2000 to now would be:
+For example, to scrape all data fromm the year 2000 to now would be:
 ```
 PlayerTable<-updateAFLData(yearBack = 2000)
 ```
