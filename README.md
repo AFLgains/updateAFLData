@@ -1,5 +1,14 @@
 # Description
 R function to webscrape AFL data from AFLtables.com. This function is intended to be used with R studio.
+## Packages you will need
+You will need some packages to use this function. Use this code snippet to automatically install the necessary packages
+
+```
+load.libraries <- c( 'FeatureHashing', 'Matrix','plyr','dplyr','XML','stringr','rvest','httr','data.table')
+install.lib <- load.libraries[!load.libraries %in% installed.packages()]
+for(libs in install.lib) install.packages(libs, dependences = TRUE)
+sapply(load.libraries, require, character = TRUE)
+```
 
 ## Basic use:
 As a basic use, you can scrape all of the data from any year by specifying the `yearBack` variable. 
